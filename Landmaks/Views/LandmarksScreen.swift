@@ -34,6 +34,7 @@ struct LandmarksScreen: View {
                                             .frame(minWidth: 120, minHeight: 80)
                                             .scaledToFit()
                                             .cornerRadius(12)
+                                            .clipShape(RoundedRectangle(cornerRadius: 12))
 
                                         VStack(alignment: .leading) {
                                             Text("\(item.getName())")
