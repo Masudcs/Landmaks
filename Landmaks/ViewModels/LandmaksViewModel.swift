@@ -7,18 +7,34 @@
 
 import Foundation
 
-class LandmaksViewModel: ObservableObject {
-    @Published var landmaks: [LandmaksResponse] = []
-    
-    func loadData() {
-        guard let url = Bundle.main.url(forResource: "landmarkData", withExtension: "json")
-        else {
-            print("Json file not found")
-            return
-        }
+class LandmaksViewModel: LandmarkRepository, ObservableObject {
+    @Published var uiState: UIState<[LandmaksResponse]> = .loading
+    @Published var errorMessage: String? = nil
 
-        let data = try? Data(contentsOf: url)
-        let landmark = try? JSONDecoder().decode([LandmaksResponse].self, from: data!)
-        landmaks = landmark!
+    private let repository: LandmarkRepositoryProtocol
+
+    init(repository: LandmarkRepositoryProtocol = LandmarkRepository()) {
+        self.repository = repository
     }
+
+    func loadData() {
+        uiState = .loading
+
+        do {
+            let landmarks = try repository.fetchLandmarks()
+            uiState = .success(landmarks)
+        } catch {
+            uiState = .failure(error)
+        }
+    }
+}
+
+extension String: Identifiable {
+    public var id: String { self }
+}
+
+enum UIState<T> {
+    case loading
+    case success(T)
+    case failure(Error)
 }

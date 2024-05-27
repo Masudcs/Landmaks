@@ -14,6 +14,7 @@
 		0A9D1AA72C048396000CB4DB /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A9D1AA62C048396000CB4DB /* landmarkData.json */; };
 		0A9D1AA92C0483E3000CB4DB /* LandmaksResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D1AA82C0483E3000CB4DB /* LandmaksResponse.swift */; };
 		0A9D1AAB2C048452000CB4DB /* LandmaksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D1AAA2C048452000CB4DB /* LandmaksViewModel.swift */; };
+		0A9D1AAD2C048FC5000CB4DB /* LandmarksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D1AAC2C048FC5000CB4DB /* LandmarksRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		0A9D1AA62C048396000CB4DB /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		0A9D1AA82C0483E3000CB4DB /* LandmaksResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmaksResponse.swift; sourceTree = "<group>"; };
 		0A9D1AAA2C048452000CB4DB /* LandmaksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmaksViewModel.swift; sourceTree = "<group>"; };
+		0A9D1AAC2C048FC5000CB4DB /* LandmarksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +64,6 @@
 				0A9D1AA22C04832E000CB4DB /* Models */,
 				0A9D1AA12C048327000CB4DB /* Views */,
 				0A9D1A932C048316000CB4DB /* LandmaksApp.swift */,
-				0A9D1A952C048316000CB4DB /* LandmarksScreen.swift */,
 				0A9D1A992C048317000CB4DB /* Preview Content */,
 			);
 			path = Landmaks;
@@ -79,6 +80,7 @@
 		0A9D1AA12C048327000CB4DB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0A9D1A952C048316000CB4DB /* LandmarksScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -94,6 +96,7 @@
 		0A9D1AA32C04833C000CB4DB /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				0A9D1AAC2C048FC5000CB4DB /* LandmarksRepository.swift */,
 				0A9D1AAA2C048452000CB4DB /* LandmaksViewModel.swift */,
 			);
 			path = ViewModels;
@@ -191,6 +194,7 @@
 				0A9D1AAB2C048452000CB4DB /* LandmaksViewModel.swift in Sources */,
 				0A9D1A942C048316000CB4DB /* LandmaksApp.swift in Sources */,
 				0A9D1AA92C0483E3000CB4DB /* LandmaksResponse.swift in Sources */,
+				0A9D1AAD2C048FC5000CB4DB /* LandmarksRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
