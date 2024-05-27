@@ -16,10 +16,18 @@
 		0A9D1AAB2C048452000CB4DB /* LandmaksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D1AAA2C048452000CB4DB /* LandmaksViewModel.swift */; };
 		0A9D1AAD2C048FC5000CB4DB /* LandmarksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D1AAC2C048FC5000CB4DB /* LandmarksRepository.swift */; };
 		0A9D1AC02C049B24000CB4DB /* LandmarksScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D1ABF2C049B24000CB4DB /* LandmarksScreenTests.swift */; };
+		0A9D1AC82C04A402000CB4DB /* LandmaksUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D1AC72C04A402000CB4DB /* LandmaksUnitTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		0A9D1ABA2C049A94000CB4DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A9D1A882C048316000CB4DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A9D1A8F2C048316000CB4DB;
+			remoteInfo = Landmaks;
+		};
+		0A9D1AC92C04A402000CB4DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0A9D1A882C048316000CB4DB /* Project object */;
 			proxyType = 1;
@@ -40,6 +48,8 @@
 		0A9D1AAC2C048FC5000CB4DB /* LandmarksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksRepository.swift; sourceTree = "<group>"; };
 		0A9D1AB42C049A94000CB4DB /* LandmaksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LandmaksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A9D1ABF2C049B24000CB4DB /* LandmarksScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksScreenTests.swift; sourceTree = "<group>"; };
+		0A9D1AC52C04A402000CB4DB /* LandmaksUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LandmaksUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A9D1AC72C04A402000CB4DB /* LandmaksUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmaksUnitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0A9D1AC22C04A402000CB4DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +82,7 @@
 			children = (
 				0A9D1A922C048316000CB4DB /* Landmaks */,
 				0A9D1AB52C049A94000CB4DB /* LandmaksUITests */,
+				0A9D1AC62C04A402000CB4DB /* LandmaksUnitTests */,
 				0A9D1A912C048316000CB4DB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +92,7 @@
 			children = (
 				0A9D1A902C048316000CB4DB /* Landmaks.app */,
 				0A9D1AB42C049A94000CB4DB /* LandmaksUITests.xctest */,
+				0A9D1AC52C04A402000CB4DB /* LandmaksUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,6 +168,14 @@
 			path = LandmaksUITests;
 			sourceTree = "<group>";
 		};
+		0A9D1AC62C04A402000CB4DB /* LandmaksUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				0A9D1AC72C04A402000CB4DB /* LandmaksUnitTests.swift */,
+			);
+			path = LandmaksUnitTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -187,6 +214,24 @@
 			productReference = 0A9D1AB42C049A94000CB4DB /* LandmaksUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		0A9D1AC42C04A402000CB4DB /* LandmaksUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A9D1ACB2C04A402000CB4DB /* Build configuration list for PBXNativeTarget "LandmaksUnitTests" */;
+			buildPhases = (
+				0A9D1AC12C04A402000CB4DB /* Sources */,
+				0A9D1AC22C04A402000CB4DB /* Frameworks */,
+				0A9D1AC32C04A402000CB4DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A9D1ACA2C04A402000CB4DB /* PBXTargetDependency */,
+			);
+			name = LandmaksUnitTests;
+			productName = LandmaksUnitTests;
+			productReference = 0A9D1AC52C04A402000CB4DB /* LandmaksUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,6 +246,10 @@
 						CreatedOnToolsVersion = 15.4;
 					};
 					0A9D1AB32C049A94000CB4DB = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 0A9D1A8F2C048316000CB4DB;
+					};
+					0A9D1AC42C04A402000CB4DB = {
 						CreatedOnToolsVersion = 15.4;
 						TestTargetID = 0A9D1A8F2C048316000CB4DB;
 					};
@@ -221,6 +270,7 @@
 			targets = (
 				0A9D1A8F2C048316000CB4DB /* Landmaks */,
 				0A9D1AB32C049A94000CB4DB /* LandmaksUITests */,
+				0A9D1AC42C04A402000CB4DB /* LandmaksUnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -237,6 +287,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0A9D1AB22C049A94000CB4DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A9D1AC32C04A402000CB4DB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -266,6 +323,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0A9D1AC12C04A402000CB4DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9D1AC82C04A402000CB4DB /* LandmaksUnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -273,6 +338,11 @@
 			isa = PBXTargetDependency;
 			target = 0A9D1A8F2C048316000CB4DB /* Landmaks */;
 			targetProxy = 0A9D1ABA2C049A94000CB4DB /* PBXContainerItemProxy */;
+		};
+		0A9D1ACA2C04A402000CB4DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A9D1A8F2C048316000CB4DB /* Landmaks */;
+			targetProxy = 0A9D1AC92C04A402000CB4DB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -484,6 +554,40 @@
 			};
 			name = Release;
 		};
+		0A9D1ACC2C04A402000CB4DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = contest.vjudge.LandmaksUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Landmaks.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Landmaks";
+			};
+			name = Debug;
+		};
+		0A9D1ACD2C04A402000CB4DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = contest.vjudge.LandmaksUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Landmaks.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Landmaks";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -510,6 +614,15 @@
 			buildConfigurations = (
 				0A9D1ABD2C049A94000CB4DB /* Debug */,
 				0A9D1ABE2C049A94000CB4DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A9D1ACB2C04A402000CB4DB /* Build configuration list for PBXNativeTarget "LandmaksUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A9D1ACC2C04A402000CB4DB /* Debug */,
+				0A9D1ACD2C04A402000CB4DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
